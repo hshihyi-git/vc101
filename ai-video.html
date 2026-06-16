@@ -148,7 +148,7 @@
             
             <!-- 聯絡按鈕 -->
             <div class="hidden md:block">
-                <a href="#contact-form-section" class="px-6 py-2 border border-brand-500 text-brand-500 hover:bg-brand-500 hover:text-white rounded-full transition-all duration-300 text-sm font-bold tracking-wider">
+                <a href="#contact" class="px-6 py-2 border border-brand-500 text-brand-500 hover:bg-brand-500 hover:text-white rounded-full transition-all duration-300 text-sm font-bold tracking-wider">
                     立即洽詢
                 </a>
             </div>
@@ -336,7 +336,7 @@
                     <div style="aspect-ratio:16/9; width:100%; background:#000; overflow:hidden;">
                         <iframe class="w-full h-full" style="border:0;" src="https://www.youtube.com/embed/uv9Dwo8x64U?autoplay=1&mute=1&controls=0&loop=1&playlist=uv9Dwo8x64U&rel=0&modestbranding=1&playsinline=1" title="Surreal AI Music Video Flying Machines-I'm Floating High" allow="autoplay; encrypted-media"></iframe>
                     </div>
-                    <div class="p-4 text-center text-sm text-gray-200">Surreal AI Music Video Flying Machines-I'm Floating High</div>
+                    <div class="p-4 text-center text-sm text-gray-200">I'm Floating High</div>
                 </div>
             </div>
         </div>
@@ -344,131 +344,84 @@
 
     <!-- 聯絡我們 (Contact / CTA) -->
     <section id="contact" class="py-24 bg-neutral-900 relative">
-        <div class="max-w-4xl mx-auto px-6 text-center fade-in-up">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(234,179,8,0.15),_transparent_45%)] pointer-events-none"></div>
+        <div class="max-w-5xl mx-auto px-6 text-center fade-in-up relative z-10">
             <h2 class="text-4xl md:text-5xl font-black mb-6">準備好製作下一部爆款影片了嗎？</h2>
-            <p class="text-xl text-gray-400 mb-12">留下您的聯絡方式與專案需求，我們的專業製片將會在 24 小時內與您聯繫。</p>
-            
-            <form class="space-y-6 text-left bg-black p-8 md:p-12 rounded-3xl border border-neutral-800 shadow-2xl">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-400 mb-2">姓名 / 稱呼</label>
-                        <input type="text" class="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors" placeholder="請輸入您的姓名">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-400 mb-2">聯絡電話</label>
-                        <input type="tel" class="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors" placeholder="請輸入聯絡電話">
-                    </div>
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-400 mb-2">公司名稱</label>
-                    <input type="text" class="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors" placeholder="您的品牌或公司名稱">
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-400 mb-2">專案需求簡述</label>
-                    <textarea rows="4" class="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors" placeholder="例如：我們想拍攝一支約 1 分鐘的企業形象廣告..."></textarea>
-                </div>
-                <button type="button" class="w-full bg-brand-500 text-black font-bold text-lg py-4 rounded-lg hover:bg-brand-600 transition-colors mt-4">
-                    送出諮詢需求
-                </button>
-            </form>
-        </div>
-    </section>
+            <p class="text-xl text-gray-400 mb-12">留下您的需求，我們將以專業製作團隊協助您打造具感染力的品牌影片。</p>
 
-    <!-- 聯絡我／合作洽詢表單區塊 -->
-    <section id="contact-form-section" class="py-24 bg-gradient-to-b from-black via-neutral-950 to-black relative overflow-hidden">
-        <!-- 背景裝飾 -->
-        <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
-            <div class="w-96 h-96 bg-brand-500 rounded-full blur-3xl"></div>
-        </div>
-        
-        <div class="max-w-4xl mx-auto px-6 lg:px-8 relative z-10">
-            <!-- 標題區域 -->
-            <div class="text-center mb-16 fade-in-up">
-                <span class="text-brand-500 font-bold tracking-widest text-sm mb-4 block">CONTACT US</span>
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">聯絡我 ／ 合作洽詢</h2>
-                <p class="text-gray-400 text-lg max-w-2xl mx-auto">無論您有任何想法或需求，我們都準備好將其轉化為驚人的視覺作品。讓我們開始對話。</p>
-            </div>
-
-            <!-- 表單容器 -->
-            <div class="bg-neutral-900/50 backdrop-blur-sm border border-neutral-800 rounded-2xl p-8 md:p-12 fade-in-up" style="transition-delay: 100ms;">
-                <form id="google-form" class="space-y-6">
-                    <!-- 姓名 -->
-                    <div>
-                        <label for="form-name" class="block text-white font-medium mb-3">姓名 *</label>
-                        <input 
-                            type="text" 
-                            id="form-name" 
-                            name="entry.1828672223" 
-                            placeholder="請輸入您的姓名"
-                            required
-                            class="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors"
-                        >
+            <div class="bg-neutral-900/70 border border-neutral-800 rounded-[40px] p-8 md:p-12 shadow-2xl backdrop-blur-sm fade-in-up">
+                <form id="google-form" class="space-y-6 text-left">
+                    <div class="grid gap-6 md:grid-cols-2">
+                        <div>
+                            <label for="form-name" class="block text-white font-medium mb-3">姓名 / 稱呼 *</label>
+                            <input
+                                type="text"
+                                id="form-name"
+                                name="entry.588998168"
+                                placeholder="請輸入您的姓名"
+                                required
+                                class="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors"
+                            >
+                        </div>
+                        <div>
+                            <label for="form-email" class="block text-white font-medium mb-3">Email *</label>
+                            <input
+                                type="email"
+                                id="form-email"
+                                name="entry.476214014"
+                                placeholder="請輸入您的聯絡信箱"
+                                required
+                                class="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors"
+                            >
+                        </div>
                     </div>
 
-                    <!-- Email -->
-                    <div>
-                        <label for="form-email" class="block text-white font-medium mb-3">Email *</label>
-                        <input 
-                            type="email" 
-                            id="form-email" 
-                            name="entry.267269794" 
-                            placeholder="您的聯絡信箱"
-                            required
-                            class="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors"
-                        >
-                    </div>
-
-                    <!-- 企劃類型 -->
                     <div>
                         <label for="form-type" class="block text-white font-medium mb-3">企劃類型 *</label>
-                        <select 
-                            id="form-type" 
-                            name="entry.98510672" 
+                        <select
+                            id="form-type"
+                            name="entry.1610329698"
                             required
-                            class="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg text-white focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors"
+                            class="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-2xl text-white focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors"
                         >
                             <option value="">請選擇企劃類型</option>
                             <option value="廣告影片">廣告影片</option>
                             <option value="企業形象影片">企業形象影片</option>
                             <option value="產品微電影">產品微電影</option>
-                            <option value="後期特效與動畫">後期特效與動畫</option>
                             <option value="其他">其他</option>
                         </select>
                     </div>
 
-                    <!-- 需求簡述 -->
                     <div>
                         <label for="form-message" class="block text-white font-medium mb-3">需求簡述 *</label>
-                        <textarea 
-                            id="form-message" 
-                            name="entry.663583590" 
-                            placeholder="請簡要描述您的需求或想法..."
+                        <textarea
+                            id="form-message"
+                            name="entry.1646642689"
+                            placeholder="請簡要描述您的專案需求或想法..."
                             rows="5"
                             required
-                            class="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors resize-none"
+                            class="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors resize-none"
                         ></textarea>
                     </div>
 
-                    <!-- 提交按鈕 -->
-                    <div class="flex gap-4 pt-4">
-                        <button 
-                            type="submit" 
-                            class="flex-1 bg-brand-500 hover:bg-brand-600 text-black font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 active:scale-95"
+                    <div class="flex flex-col gap-4 pt-4 md:flex-row">
+                        <button
+                            type="submit"
+                            class="flex-1 bg-brand-500 hover:bg-brand-600 text-black font-bold py-4 rounded-2xl transition-all duration-300 transform hover:-translate-y-0.5 active:scale-95"
                         >
-                            提交需求
+                            送出諮詢需求
                         </button>
-                        <button 
-                            type="reset" 
-                            class="flex-1 bg-neutral-800 hover:bg-neutral-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+                        <button
+                            type="reset"
+                            class="flex-1 bg-neutral-800 hover:bg-neutral-700 text-white font-bold py-4 rounded-2xl transition-colors"
                         >
-                            清空
+                            清空表單
                         </button>
                     </div>
                 </form>
             </div>
 
-            <!-- 提示文字 -->
-            <p class="text-gray-500 text-sm text-center mt-8">我們會在 24 小時內與您聯絡，感謝您的信任。</p>
+            <p class="text-gray-500 text-sm text-center mt-8">送出後會在 24 小時內回覆，保持手機暢通。</p>
         </div>
     </section>
 
@@ -493,7 +446,7 @@
                     <li><a href="#about" class="hover:text-brand-500 transition-colors">關於我們</a></li>
                     <li><a href="#services" class="hover:text-brand-500 transition-colors">服務項目</a></li>
                     <li><a href="#portfolio" class="hover:text-brand-500 transition-colors">精選作品</a></li>
-                    <li><a href="#contact-form-section" class="hover:text-brand-500 transition-colors">聯絡我們</a></li>
+                    <li><a href="#contact" class="hover:text-brand-500 transition-colors">聯絡我們</a></li>
                 </ul>
             </div>
             
@@ -529,13 +482,6 @@
             // Google 表單的 Action URL
             const formAction = 'https://docs.google.com/forms/d/e/1FAIpQLSek-tG2B0RcAUc0JG4wIFuaJYfm3A4tBifZM1tSpzAyUOhy1g/formResponse';
 
-            // 建立 FormData
-            const formData = new FormData();
-            formData.append('entry.1828672223', formName.value);
-            formData.append('entry.267269794', formEmail.value);
-            formData.append('entry.98510672', formType.value);
-            formData.append('entry.663583590', formMessage.value);
-
             // 使用隱藏 iframe 提交表單（避免頁面跳轉）
             const iframe = document.createElement('iframe');
             iframe.style.display = 'none';
@@ -551,10 +497,10 @@
 
             // 添加表單欄位
             const fields = {
-                'entry.1828672223': formName.value,
-                'entry.267269794': formEmail.value,
-                'entry.98510672': formType.value,
-                'entry.663583590': formMessage.value
+                'entry.588998168': formName.value,
+                'entry.476214014': formEmail.value,
+                'entry.1610329698': formType.value,
+                'entry.1646642689': formMessage.value
             };
 
             for (const [key, value] of Object.entries(fields)) {
@@ -573,6 +519,7 @@
             // 清理 DOM
             setTimeout(() => {
                 document.body.removeChild(hiddenForm);
+                document.body.removeChild(iframe);
             }, 1000);
 
             // 顯示成功提示
