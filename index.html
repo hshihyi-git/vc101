@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Lifestyle | Good tools. Quiet joy. Every meal.</title>
+    <meta name="description" content="透過專業選品能力與生活美學觀點，協助消費者打造更有品質、更有儀式感的居家生活。">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            950: '#1D1D1F',
+                            900: '#424245',
+                            800: '#6E6E73',
+                            700: '#888B8B',
+                            200: '#D2D2D7',
+                            100: '#E8E8ED',
+                            50: '#F5F5F7',
+                        },
+                        primary: '#0071E3',
+                        secondary: '#42A5F5',
+                        accent: '#34C759',
+                        danger: '#FF3B30',
+                        bg1: '#FFFFFF',
+                        bg2: '#F5F5F7',
+                        bg3: '#EFF0F2',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)',
+                        'glow': '0 0 20px rgba(0, 113, 227, 0.35)',
+                        'glow-blue': '0 0 20px rgba(66, 165, 245, 0.25)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --brand-black: #1D1D1F;
+            --brand-gray: #424245;
+            --brand-silver: #F5F5F7;
+            --brand-white: #FFFFFF;
+            --brand-blue: #0071E3;
+            --brand-blue-soft: #42A5F5;
+            --brand-green: #34C759;
+            --brand-red: #FF3B30;
+        }
+
+        .bg-slate-900 { background-color: var(--brand-black) !important; }
+        .bg-slate-800 { background-color: #29292D !important; }
+        .bg-slate-700 { background-color: #3C3C42 !important; }
+        .bg-slate-600 { background-color: #55555B !important; }
+        .bg-slate-500 { background-color: #747479 !important; }
+        .bg-slate-400 { background-color: #8E8E93 !important; }
+        .bg-slate-300 { background-color: #B0B0B5 !important; }
+        .bg-slate-200 { background-color: #D2D2D7 !important; }
+        .bg-slate-100 { background-color: #E8E8ED !important; }
+        .bg-slate-50 { background-color: #F5F5F7 !important; }
+
+        .text-slate-900 { color: var(--brand-black) !important; }
+        .text-slate-800 { color: #424245 !important; }
+        .text-slate-700 { color: #6E6E73 !important; }
+        .text-slate-600 { color: #888B8B !important; }
+        .text-slate-500 { color: #A5A5AB !important; }
+        .text-slate-400 { color: #BFC1C6 !important; }
+        .text-slate-300 { color: #D2D2D7 !important; }
+        .text-slate-200 { color: #E8E8ED !important; }
+
+        .border-slate-800 { border-color: #3C3C42 !important; }
+        .border-slate-700 { border-color: #4A4A51 !important; }
+        .border-slate-600 { border-color: #6E6E73 !important; }
+        .border-slate-500 { border-color: #8E8E93 !important; }
+        .border-slate-400 { border-color: #A5A5AB !important; }
+        .border-slate-300 { border-color: #BFC1C6 !important; }
+        .border-slate-200 { border-color: #D2D2D7 !important; }
+        .border-slate-100 { border-color: #E8E8ED !important; }
+        .border-slate-50 { border-color: #F5F5F7 !important; }
+        /* Base & Reset */
+        body {
+            font-family: 'Inter', 'Noto Sans TC', sans-serif;
+            background-color: #FFFFFF;
+            color: var(--brand-black);
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism Utilities */
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        
+        .glass-dark {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .glass-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(0, 113, 227, 0.12), 0 5px 15px rgba(66, 165, 245, 0.08);
+            border-color: rgba(0, 113, 227, 0.24);
+        }
+
+        /* Typography */
+        .text-gradient {
+            background: linear-gradient(135deg, #0071E3 0%, #42A5F5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-gradient-subtle {
+            background: linear-gradient(135deg, #424245 0%, #888B8B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        /* Typewriter Cursor */
+        .typewriter-cursor {
+            display: inline-block;
+            width: 3px;
+            height: 1em;
+            background-color: var(--brand-blue);
+            vertical-align: middle;
+            animation: blink 1s step-end infinite;
+            margin-left: 2px;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        /* Marquee */
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+        
+        .marquee-content {
+            display: inline-flex;
+            animation: marquee 35s linear infinite;
+        }
+        
+        .marquee-content:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* Hover Glow Button */
+        .btn-glow {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+        
+        .btn-glow::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, #0071E3, #42A5F5);
+            z-index: -1;
+            transition: opacity 0.3s ease;
+            opacity: 1;
+        }
+
+        .btn-glow::after {
+            content: '';
+            position: absolute;
+            top: -2px; left: -2px; right: -2px; bottom: -2px;
+            background: linear-gradient(135deg, #0071E3, #42A5F5, #34C759, #0071E3);
+            background-size: 400%;
+            z-index: -2;
+            filter: blur(10px);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            animation: borderGlow 10s linear infinite;
+        }
+
+        .btn-glow:hover::after {
+            opacity: 0.8;
+        }
+        
+        /* Status Ready to connect */
+        .btn-status-container:hover .btn-status-text {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .btn-status-text {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+        }
+
+        @keyframes borderGlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Canvas Background */
+        #bg-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -10;
+            pointer-events: none;
+            background: #FAFAFA;
+        }
+
+        /* Gradient Orbs */
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: -9;
+            opacity: 0.4;
+            animation: float 15s ease-in-out infinite alternate;
+        }
+        .orb-1 { top: -10%; left: -10%; width: 50vw; height: 50vw; background: rgba(37, 99, 235, 0.15); animation-delay: 0s; }
+        .orb-2 { bottom: -10%; right: -10%; width: 60vw; height: 60vw; background: rgba(124, 58, 237, 0.1); animation-delay: -5s; }
+        .orb-3 { top: 40%; left: 40%; width: 40vw; height: 40vw; background: rgba(16, 185, 129, 0.05); animation-delay: -10s; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        
+        /* White Grid System overlay */
+        .grid-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: 
+                linear-gradient(to right, rgba(0,0,0,0.02) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0,0,0,0.02) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -8;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary selection:text-white">
+
+    <!-- Interactive Background -->
+    <canvas id="bg-canvas"></canvas>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="glass mx-4 md:mx-auto max-w-7xl mt-4 rounded-full px-6 py-3 flex justify-between items-center shadow-glass">
+            <a href="#" class="text-xl font-bold tracking-tighter flex items-center gap-2">
+                <i class="fa-solid fa-utensils text-primary"></i>
+                <span class="text-gradient">Kitchen Lifestyle</span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-primary transition-colors">品牌故事</a>
+                <a href="#services" class="hover:text-primary transition-colors">專業服務</a>
+                <a href="#products" class="hover:text-primary transition-colors">精選好物</a>
+                <a href="#blog" class="hover:text-primary transition-colors">知識庫</a>
+            </div>
+
+            <!-- CTA -->
+            <div class="hidden md:block">
+                <a href="https://calendar.app.google/JXF8bBTuW2ZNTVLf8" target="_blank" class="bg-primary text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-secondary transition-all shadow-md hover:shadow-glow">
+                    預約諮詢
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-slate-800 focus:outline-none" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden absolute top-20 left-4 right-4 glass-dark rounded-2xl shadow-xl p-4 flex flex-col space-y-4 text-center" id="mobile-menu">
+            <a href="#about" class="text-slate-700 font-medium py-2 hover:text-primary">品牌故事</a>
+            <a href="#services" class="text-slate-700 font-medium py-2 hover:text-primary">專業服務</a>
+            <a href="#products" class="text-slate-700 font-medium py-2 hover:text-primary">精選好物</a>
+            <a href="#blog" class="text-slate-700 font-medium py-2 hover:text-primary">知識庫</a>
+            <a href="https://calendar.app.google/JXF8bBTuW2ZNTVLf8" target="_blank" class="bg-primary text-white py-3 rounded-xl font-medium">預約諮詢</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10 w-full flex flex-col items-center text-center">
+            
+            <div class="inline-block mb-6 px-4 py-1.5 rounded-full glass border border-blue-200/50 reveal">
+                <span class="text-sm font-medium text-primary tracking-wide uppercase flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    Good tools. Quiet joy. Every meal.
+                </span>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-slate-900 mb-6 leading-tight max-w-5xl reveal reveal-delay-1">
+                The finest kitchen, <br class="hidden md:block" />
+                <span id="typewriter" class="text-gradient"></span><span class="typewriter-cursor"></span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl leading-relaxed reveal reveal-delay-2 font-light">
+                讓每一次選品，都來自真正理解消費者需求的洞察。<br class="hidden md:block">
+                結合市場研究、生活美學與多年廚房選品經驗，<br class="hidden md:block">
+                協助你找到值得每天使用的料理夥伴。
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto reveal reveal-delay-3">
+                <a href="https://calendar.app.google/JXF8bBTuW2ZNTVLf8" target="_blank" class="btn-glow text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center justify-center gap-3 transition-transform hover:scale-105">
+                    立即預約選品諮詢
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#products" class="px-8 py-4 rounded-full font-semibold text-lg flex items-center justify-center gap-3 bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition-all hover:border-slate-300">
+                    探索精選好物
+                    <i class="fa-solid fa-arrow-down text-sm"></i>
+                </a>
+            </div>
+            
+            <!-- Mouse Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 floating">
+                <span class="text-xs font-medium uppercase tracking-widest">Scroll</span>
+                <div class="w-[1px] h-12 bg-gradient-to-b from-slate-800 to-transparent"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Value Section -->
+    <section class="py-24 relative bg-white/50 backdrop-blur-sm border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">好的廚具，不只是工具</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                    它是每天回家後的一份期待，是與家人共享晚餐的溫度，<br class="hidden md:block">也是讓平凡日常變得值得珍惜的儀式感。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="glass-card p-8 rounded-3xl reveal">
+                    <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 text-primary text-2xl shadow-inner">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">專業選品</h3>
+                    <p class="text-slate-600 leading-relaxed">深入研究全球廚具材質與工藝，為您過濾繁雜資訊，只推薦真正符合人體工學與耐用標準的頂級器具。</p>
+                </div>
+                <!-- Value 2 -->
+                <div class="glass-card p-8 rounded-3xl reveal reveal-delay-1">
+                    <div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center mb-6 text-secondary text-2xl shadow-inner">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">生活美學</h3>
+                    <p class="text-slate-600 leading-relaxed">工具不只要好用，更要好看。我們注重產品的設計語彙，讓廚房成為展現個人品味的高級生活場域。</p>
+                </div>
+                <!-- Value 3 -->
+                <div class="glass-card p-8 rounded-3xl reveal reveal-delay-2">
+                    <div class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 text-accent text-2xl shadow-inner">
+                        <i class="fa-solid fa-recycle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">永續品質</h3>
+                    <p class="text-slate-600 leading-relaxed">拒絕快時尚消費。我們倡導「買得少，買得好」，挑選能陪伴您十年甚至一輩子的經典廚房好物。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                
+                <!-- Left: Image & Stats -->
+                <div class="w-full lg:w-1/2 relative reveal">
+                    <div class="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl bg-slate-100">
+                        <!-- High-end Placeholder for Portrait -->
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kitchen Lifestyle Portrait" class="object-cover w-full h-full opacity-90 transition-transform duration-700 hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                    </div>
+                    
+                    <!-- Floating Stat Card -->
+                    <div class="absolute -bottom-8 -right-8 glass-dark p-6 rounded-2xl shadow-xl w-64 hidden md:block floating">
+                        <div class="text-sm text-slate-500 font-medium mb-1">Customer Satisfaction</div>
+                        <div class="flex items-end gap-2">
+                            <div class="text-4xl font-bold text-slate-900 counter" data-target="99">0</div>
+                            <div class="text-2xl font-bold text-slate-900">%</div>
+                        </div>
+                        <div class="w-full bg-slate-100 h-2 rounded-full mt-3 overflow-hidden">
+                            <div class="bg-gradient-to-r from-primary to-accent w-full h-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Storytelling -->
+                <div class="w-full lg:w-1/2 space-y-8 reveal reveal-delay-1">
+                    <div>
+                        <div class="text-primary font-semibold tracking-wider uppercase text-sm mb-2">About The Curator</div>
+                        <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">以設計思維，<br>重塑你的廚房日常。</h2>
+                        <p class="text-lg text-slate-600 leading-relaxed">
+                            我是你的個人廚房美學顧問。擁有多年產品設計與跨國生活選品經驗，我深知市場上充斥著過度包裝與不實用的器具。我的使命，是將頂尖的 UI/UX 「使用者體驗」思維帶入實體廚房，為你挑選符合人體工學、美感與耐用性的完美工具。
+                        </p>
+                    </div>
+
+                    <!-- Stats Grid -->
+                    <div class="grid grid-cols-3 gap-6 pt-6 border-t border-slate-200">
+                        <div>
+                            <div class="text-3xl font-bold text-slate-900 mb-1 flex items-center">
+                                <span class="counter" data-target="8">0</span>+
+                            </div>
+                            <div class="text-sm text-slate-500">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-slate-900 mb-1 flex items-center">
+                                <span class="counter" data-target="50">0</span>+
+                            </div>
+                            <div class="text-sm text-slate-500">Brand Collabs</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-slate-900 mb-1 flex items-center">
+                                <span class="counter" data-target="1000">0</span>+
+                            </div>
+                            <div class="text-sm text-slate-500">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-32 bg-slate-50/50 relative border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20 reveal">
+                <div class="text-secondary font-semibold tracking-wider uppercase text-sm mb-2">Expertise</div>
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6">為你打造最適合的<br>廚房生活方案</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">不論是新手入門還是老手升級，提供量身定制的選品建議。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service Cards -->
+                <!-- Card 1 -->
+                <div class="glass-card p-8 rounded-3xl reveal group">
+                    <div class="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-fire-burner"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">鍋具與刀具選品顧問</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">針對您的料理習慣，推薦最適合的材質與刀型配置。</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass-card p-8 rounded-3xl reveal reveal-delay-1 group">
+                    <div class="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">廚房收納規劃建議</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">運用空間動線邏輯，打造井然有序的高效料理場域。</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass-card p-8 rounded-3xl reveal reveal-delay-2 group">
+                    <div class="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cookie-bite"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">烘焙器具入門推薦</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">精選不失敗的模具與工具，讓週末烘焙時光更美好。</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="glass-card p-8 rounded-3xl reveal reveal-delay-3 group">
+                    <div class="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-box-archive"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">環保餐具與保鮮系統</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">建立減塑生活，推薦無毒、真空保鮮的優質方案。</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="glass-card p-8 rounded-3xl reveal group">
+                    <div class="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">咖啡與飲品器具配置</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">從手沖到義式，為您尋找沖煮完美風味的器具。</p>
+                </div>
+                <!-- Card 6 -->
+                <div class="glass-card p-8 rounded-3xl reveal reveal-delay-1 group">
+                    <div class="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">企業禮贈品採購顧問</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">為企業挑選具備品味與實用價值的 VIP 專屬贈禮。</p>
+                </div>
+                <!-- Card 7 -->
+                <div class="glass-card p-8 rounded-3xl reveal reveal-delay-2 group">
+                    <div class="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">新婚與新居廚房配置</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">成家第一步，系統化建立新生活的廚房用品清單。</p>
+                </div>
+                <!-- Card 8 -->
+                <div class="glass-card p-8 rounded-3xl reveal reveal-delay-3 group">
+                    <div class="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">團購與員工福利方案</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">精選熱銷好物，提供具競爭力的封閉式專屬優惠。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section (Apple Style) -->
+    <section id="products" class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-16 reveal">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">精選好物</h2>
+                    <p class="text-slate-600 text-lg">經過無數次實測，值得你擁有的經典之作。</p>
+                </div>
+                <a href="#" class="hidden md:flex items-center gap-2 text-primary font-medium hover:text-secondary transition-colors">
+                    查看所有分類 <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Product 1 -->
+                <div class="group cursor-pointer reveal">
+                    <div class="bg-slate-50 rounded-3xl aspect-square mb-6 overflow-hidden relative flex items-center justify-center p-8 transition-all duration-500 group-hover:shadow-lg group-hover:bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1596225435388-c41999264426?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="鑄鐵鍋" class="object-contain w-full h-full mix-blend-multiply transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-white/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold text-slate-800">鍋具系列</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-1">法式琺瑯鑄鐵鍋 22cm</h3>
+                        <p class="text-slate-500 text-sm mb-3">均勻導熱，鎖住食材原汁原味</p>
+                        <div class="flex items-center justify-between">
+                            <span class="font-semibold text-slate-900">NT$ 8,200</span>
+                            <button class="w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                                <i class="fa-solid fa-plus text-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="group cursor-pointer reveal reveal-delay-1">
+                    <div class="bg-slate-50 rounded-3xl aspect-square mb-6 overflow-hidden relative flex items-center justify-center p-8 transition-all duration-500 group-hover:shadow-lg group-hover:bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1593618998160-e34014e67546?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="主廚刀" class="object-contain w-full h-full mix-blend-multiply transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-white/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold text-slate-800">刀具系列</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-1">大馬士革鋼主廚刀</h3>
+                        <p class="text-slate-500 text-sm mb-3">67層摺疊鍛打，極致鋒利</p>
+                        <div class="flex items-center justify-between">
+                            <span class="font-semibold text-slate-900">NT$ 4,500</span>
+                            <button class="w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                                <i class="fa-solid fa-plus text-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="group cursor-pointer reveal reveal-delay-2">
+                    <div class="bg-slate-50 rounded-3xl aspect-square mb-6 overflow-hidden relative flex items-center justify-center p-8 transition-all duration-500 group-hover:shadow-lg group-hover:bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1610707474443-4cb5cc9a9043?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="收納罐" class="object-contain w-full h-full mix-blend-multiply transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-white/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold text-slate-800">收納系列</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-1">真空玻璃保鮮罐組</h3>
+                        <p class="text-slate-500 text-sm mb-3">一鍵抽真空，延長食材保鮮期</p>
+                        <div class="flex items-center justify-between">
+                            <span class="font-semibold text-slate-900">NT$ 2,180</span>
+                            <button class="w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                                <i class="fa-solid fa-plus text-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="group cursor-pointer reveal reveal-delay-3">
+                    <div class="bg-slate-50 rounded-3xl aspect-square mb-6 overflow-hidden relative flex items-center justify-center p-8 transition-all duration-500 group-hover:shadow-lg group-hover:bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="手沖壺" class="object-contain w-full h-full mix-blend-multiply transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-white/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold text-slate-800">咖啡器具</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-1">溫控細口手沖壺</h3>
+                        <p class="text-slate-500 text-sm mb-3">精準控溫，穩定水流萃取完美</p>
+                        <div class="flex items-center justify-between">
+                            <span class="font-semibold text-slate-900">NT$ 3,600</span>
+                            <button class="w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                                <i class="fa-solid fa-plus text-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center md:hidden">
+                <a href="#" class="inline-block border border-slate-300 rounded-full px-6 py-2 text-slate-700 font-medium hover:bg-slate-50">查看所有商品</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-32 bg-slate-900 text-white relative overflow-hidden">
+        <!-- Background Effects -->
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-50"></div>
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary rounded-full filter blur-[150px] opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary rounded-full filter blur-[150px] opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center mb-16 reveal">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">真正改變生活的，不只是商品</h2>
+            <p class="text-slate-400 text-lg">來自超過 1,000 位顧客的真實回饋與信任。</p>
+        </div>
+
+        <!-- Marquee -->
+        <div class="marquee-container py-8 relative z-10 mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent)">
+            <div class="marquee-content gap-6 px-3">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-white/10 backdrop-blur-xl border border-white/10 p-8 rounded-3xl w-[400px] flex-shrink-0 whitespace-normal">
+                    <div class="flex text-secondary mb-4 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-slate-200 mb-6 leading-relaxed">「以前總是亂買便宜鍋具，用沒幾次就壞。透過諮詢後買的這把平底鍋，真的完全改變了我對下廚的排斥感，現在每天都想做菜！」</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold">C</div>
+                        <div>
+                            <div class="font-medium">Chen, Taipei</div>
+                            <div class="text-xs text-slate-400">新居廚房配置客戶</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white/10 backdrop-blur-xl border border-white/10 p-8 rounded-3xl w-[400px] flex-shrink-0 whitespace-normal">
+                    <div class="flex text-secondary mb-4 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-slate-200 mb-6 leading-relaxed">「收納規劃服務太神了！原本擁擠不堪的小廚房，經過老師建議的保鮮盒系統與層架配置，現在看起來像樣品屋一樣美。」</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-accent to-secondary flex items-center justify-center text-white font-bold">L</div>
+                        <div>
+                            <div class="font-medium">Lin, Taichung</div>
+                            <div class="text-xs text-slate-400">廚房收納諮詢客戶</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white/10 backdrop-blur-xl border border-white/10 p-8 rounded-3xl w-[400px] flex-shrink-0 whitespace-normal">
+                    <div class="flex text-secondary mb-4 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-slate-200 mb-6 leading-relaxed">「買給老婆的週年禮物，因為不懂廚具所以預約了諮詢。選品顧問非常專業且細心，挑選的刀具組老婆愛不釋手，切菜手感極佳。」</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold">W</div>
+                        <div>
+                            <div class="font-medium">Wang, Hsinchu</div>
+                            <div class="text-xs text-slate-400">禮品採購客戶</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Duplicate for infinite scroll effect -->
+                <div class="bg-white/10 backdrop-blur-xl border border-white/10 p-8 rounded-3xl w-[400px] flex-shrink-0 whitespace-normal">
+                    <div class="flex text-secondary mb-4 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-slate-200 mb-6 leading-relaxed">「以前總是亂買便宜鍋具，用沒幾次就壞。透過諮詢後買的這把平底鍋，真的完全改變了我對下廚的排斥感，現在每天都想做菜！」</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold">C</div>
+                        <div>
+                            <div class="font-medium">Chen, Taipei</div>
+                            <div class="text-xs text-slate-400">新居廚房配置客戶</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-xl border border-white/10 p-8 rounded-3xl w-[400px] flex-shrink-0 whitespace-normal">
+                    <div class="flex text-secondary mb-4 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-slate-200 mb-6 leading-relaxed">「收納規劃服務太神了！原本擁擠不堪的小廚房，經過老師建議的保鮮盒系統與層架配置，現在看起來像樣品屋一樣美。」</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-accent to-secondary flex items-center justify-center text-white font-bold">L</div>
+                        <div>
+                            <div class="font-medium">Lin, Taichung</div>
+                            <div class="text-xs text-slate-400">廚房收納諮詢客戶</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-16 reveal">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">料理生活知識庫</h2>
+                    <p class="text-slate-600 text-lg">分享關於選品、收納與讓生活更美好的提案。</p>
+                </div>
+                <a href="#" class="hidden md:flex items-center gap-2 text-primary font-medium hover:text-secondary transition-colors">
+                    閱讀更多文章 <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+            </div>
+
+            <!-- Magazine Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                <!-- Main Feature Article -->
+                <div class="md:col-span-7 group cursor-pointer reveal">
+                    <div class="relative rounded-3xl overflow-hidden aspect-[16/10] mb-6 shadow-md">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Kitchen Setup" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8">
+                            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">Guide</span>
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">新手必備的五項廚房工具：<br>從零開始打造高效料理區</h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed pr-4">剛開始下廚不知道該買什麼？其實你不需要滿屋子的器具。我們整理了5款最核心、使用率最高的廚房必備工具，幫助你用最少的預算，發揮最大的料理效益...</p>
+                </div>
+
+                <!-- Side Articles -->
+                <div class="md:col-span-5 flex flex-col justify-between space-y-6">
+                    
+                    <div class="flex gap-4 group cursor-pointer reveal reveal-delay-1 items-center">
+                        <div class="w-32 h-32 rounded-2xl overflow-hidden flex-shrink-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1593618998160-e34014e67546?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Knife" class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-secondary uppercase tracking-wider mb-1 block">Review</span>
+                            <h4 class="text-lg font-bold text-slate-900 mb-2 leading-tight group-hover:text-primary transition-colors">如何挑選第一把主廚刀？材質與手感解析</h4>
+                            <p class="text-sm text-slate-500 line-clamp-2">一把好的主廚刀是料理的靈魂，帶你認識不鏽鋼與高碳鋼的差異。</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 group cursor-pointer reveal reveal-delay-2 items-center">
+                        <div class="w-32 h-32 rounded-2xl overflow-hidden flex-shrink-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Storage" class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-accent uppercase tracking-wider mb-1 block">Tips</span>
+                            <h4 class="text-lg font-bold text-slate-900 mb-2 leading-tight group-hover:text-primary transition-colors">小坪數廚房收納技巧：極大化空間利用率</h4>
+                            <p class="text-sm text-slate-500 line-clamp-2">利用垂直空間與統一規格的保鮮盒，讓廚房視覺瞬間放大兩倍。</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 group cursor-pointer reveal reveal-delay-3 items-center">
+                        <div class="w-32 h-32 rounded-2xl overflow-hidden flex-shrink-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Cooking" class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-primary uppercase tracking-wider mb-1 block">Lifestyle</span>
+                            <h4 class="text-lg font-bold text-slate-900 mb-2 leading-tight group-hover:text-primary transition-colors">讓料理變簡單的五個好習慣</h4>
+                            <p class="text-sm text-slate-500 line-clamp-2">備料邏輯與隨手清理的秘訣，讓下廚不再是一場混戰。</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Products Section -->
+    <section id="core-products" class="py-16 bg-slate-50/50 border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-8 reveal">
+                <h2 class="text-2xl font-bold text-slate-900">核心產品與技術解決方案</h2>
+                <p class="text-slate-600">訂閱 / 研究圈：深入選品、家電研究與實作提案</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <a href="https://shop.taiwankitchen.com/product/information?p=k8f3d2a1bc9e44g7h5j0123456789abc" target="_blank" class="glass-card p-6 rounded-2xl flex items-start gap-4 hover:shadow-lg transition-colors">
+                    <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary text-2xl">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900">廚房好物：料理選品訂閱圈</h3>
+                        <p class="text-slate-600">訂閱廚房好物料理選品訂閱圈，跟著我們一同走入廚房器具選品與料理生活提案的世界</p>
+                    </div>
+                </a>
+
+                <a href="https://shop.taiwankitchen.com/product/information?p=h7k2m9n4pq1r5s8t0uvwx234567yz90" target="_blank" class="glass-card p-6 rounded-2xl flex items-start gap-4 hover:shadow-lg transition-colors">
+                    <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary text-2xl">
+                        <i class="fa-solid fa-plug"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900">廚電選學：家用廚房家電研究圈</h3>
+                        <p class="text-slate-600">訂閱廚電選學家用廚房家電研究圈，跟著我們一同走入廚房家電選購攻略與智慧廚房生活應用的世界</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dependencies Social Links Section -->
+    <section class="py-16 bg-slate-50/50 border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-8 reveal">
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900">外部依賴庫 (Dependencies)</h2>
+                <p class="text-slate-600">連結我們的重要社群與工具，讓你快速加入 LINE、Facebook、LinkedIn 與 GitHub。</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="https://aistudy.pse.is/linemdsgroup" target="_blank" class="glass-card p-6 rounded-3xl flex flex-col items-center justify-center text-center transition hover:shadow-glow">
+                    <div class="w-14 h-14 rounded-full bg-accent text-white flex items-center justify-center mb-4 text-2xl">
+                        <i class="fa-brands fa-line"></i>
+                    </div>
+                    <div class="text-slate-900 font-semibold">LINE</div>
+                    <div class="text-sm text-slate-500 mt-1">加入 LINE 群組</div>
+                </a>
+                <a href="https://www.facebook.com/MarketingDataScienceTMR/" target="_blank" class="glass-card p-6 rounded-3xl flex flex-col items-center justify-center text-center transition hover:shadow-glow">
+                    <div class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center mb-4 text-2xl">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="text-slate-900 font-semibold">Facebook</div>
+                    <div class="text-sm text-slate-500 mt-1">品牌粉絲專頁</div>
+                </a>
+                <a href="https://www.linkedin.com/in/howardzhong/" target="_blank" class="glass-card p-6 rounded-3xl flex flex-col items-center justify-center text-center transition hover:shadow-glow">
+                    <div class="w-14 h-14 rounded-full bg-secondary text-white flex items-center justify-center mb-4 text-2xl">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="text-slate-900 font-semibold">LinkedIn</div>
+                    <div class="text-sm text-slate-500 mt-1">專業人脈連結</div>
+                </a>
+                <a href="https://github.com/hshihyi" target="_blank" class="glass-card p-6 rounded-3xl flex flex-col items-center justify-center text-center transition hover:shadow-glow">
+                    <div class="w-14 h-14 rounded-full bg-slate-900 text-white flex items-center justify-center mb-4 text-2xl">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="text-slate-900 font-semibold">GitHub</div>
+                    <div class="text-sm text-slate-500 mt-1">程式碼與專案庫</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Request Form Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="glass-card p-10 rounded-3xl shadow-glow text-center">
+                <div class="mb-6">
+                    <div class="text-sm uppercase tracking-[0.3em] text-primary font-semibold">填寫需求表單</div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-4">讓我們更快速了解你的專案需求</h2>
+                    <p class="text-slate-600 mt-4 max-w-2xl mx-auto">請點擊下方按鈕，前往完整表單填寫需求內容，讓我們提供最精準的廚房選品建議。</p>
+                </div>
+                <a href="https://forms.gle/v7GnSy7Kz6VhsDZa8" target="_blank" class="inline-flex items-center justify-center gap-3 rounded-full bg-primary text-white px-10 py-4 font-semibold text-lg hover:bg-secondary transition-all">
+                    前往填寫 Google Form
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking CTA Section -->
+    <section class="py-32 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-white to-blue-50/50"></div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center reveal">
+            <div class="w-20 h-20 mx-auto bg-white rounded-2xl shadow-glow mb-8 flex items-center justify-center transform rotate-12">
+                <i class="fa-regular fa-calendar-check text-3xl text-primary transform -rotate-12"></i>
+            </div>
+            <h2 class="text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">找到最適合你的廚房夥伴</h2>
+            <p class="text-xl text-slate-600 mb-12">無論是個人廚房升級、新居規劃，還是企業採購，<br>讓我們聊聊您的需求，提供專業的選品建議。</p>
+            
+            <div class="btn-status-container inline-block">
+                <a href="https://calendar.app.google/JXF8bBTuW2ZNTVLf8" target="_blank" class="btn-glow block bg-primary text-white px-12 py-5 rounded-full text-xl font-bold shadow-2xl transition-transform hover:scale-105">
+                    立即預約免費諮詢
+                </a>
+                <div class="btn-status-text mt-4 flex items-center justify-center gap-2 text-sm font-medium text-primary">
+                    <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                    Status: Ready To Connect
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <footer id="contact" class="bg-slate-900 text-slate-300 pt-24 pb-12 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
+                
+                <!-- Contact Info -->
+                <div class="reveal">
+                    <h3 class="text-3xl font-bold text-white mb-6">Start a conversation.</h3>
+                    <p class="text-slate-400 mb-10 max-w-md">有任何合作提案或選品疑問？歡迎隨時與我們聯繫。我們通常會在 24 小時內回覆。</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-primary transition-colors">
+                                <i class="fa-solid fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500 uppercase tracking-wider">Email</div>
+                                <a href="mailto:hello@kitchenlifestyle.com" class="text-lg text-white hover:text-primary transition-colors">hello@kitchenlifestyle.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-primary transition-colors">
+                                <i class="fa-solid fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500 uppercase tracking-wider">Phone</div>
+                                <a href="tel:+886912345678" class="text-lg text-white hover:text-primary transition-colors">+886 912 345 678</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-accent/80 transition-colors">
+                                <i class="fa-brands fa-line text-white"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500 uppercase tracking-wider">Line Official</div>
+                                <a href="#" class="text-lg text-white hover:text-accent transition-colors">@kitchen_lifestyle</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 mt-10">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-white hover:text-slate-900 transition-all"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-white hover:text-slate-900 transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-slate-800/50 backdrop-blur-md p-8 rounded-3xl border border-slate-700 reveal reveal-delay-1">
+                    <form id="contactForm" class="space-y-6" onsubmit="event.preventDefault(); submitForm();">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-400 mb-2">姓名 Name</label>
+                                <input type="text" required class="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-400 mb-2">電話 Phone</label>
+                                <input type="tel" required class="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-400 mb-2">電子郵件 Email</label>
+                            <input type="email" required class="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-400 mb-2">需求說明 How can we help?</label>
+                            <textarea rows="4" required class="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors resize-none"></textarea>
+                        </div>
+                        <button type="submit" id="submitBtn" class="w-full bg-white text-slate-900 font-bold text-lg py-4 rounded-xl hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2">
+                            <span>送出訊息 Send Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+                <div>&copy; 2026 Kitchen Lifestyle. All rights reserved.</div>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Mobile Menu Toggle
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            // 2. Navbar Glass Effect on Scroll
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('py-2');
+                    navbar.classList.remove('py-4');
+                } else {
+                    navbar.classList.add('py-4');
+                    navbar.classList.remove('py-2');
+                }
+            });
+
+            // 3. Typewriter Effect
+            const textToType = "begins with the right tool.";
+            const typeContainer = document.getElementById('typewriter');
+            let charIndex = 0;
+            
+            function typeWriter() {
+                if (charIndex < textToType.length) {
+                    typeContainer.textContent += textToType.charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeWriter, 100);
+                }
+            }
+            // Start typing after initial load delay
+            setTimeout(typeWriter, 1000);
+
+            // 4. Intersection Observer for Scroll Animations
+            const revealElements = document.querySelectorAll('.reveal');
+            
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        // If it contains a counter, trigger it
+                        const counters = entry.target.querySelectorAll('.counter');
+                        if (counters.length > 0) {
+                            startCounters(counters);
+                        }
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                root: null,
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            });
+
+            revealElements.forEach(el => revealObserver.observe(el));
+
+            // 5. Number Counter Animation
+            function startCounters(counters) {
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-target');
+                    const duration = 2000; // ms
+                    const increment = target / (duration / 16); // 60fps
+                    let current = 0;
+
+                    const updateCounter = () => {
+                        current += increment;
+                        if (current < target) {
+                            counter.innerText = Math.ceil(current);
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCounter();
+                    // Remove class so it doesn't trigger again
+                    counter.classList.remove('counter');
+                });
+            }
+
+            // 6. Interactive Canvas Background (Premium Soft Tech Feel)
+            const canvas = document.getElementById('bg-canvas');
+            const ctx = canvas.getContext('2d');
+            let width, height;
+            let particles = [];
+
+            function resize() {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
+            }
+
+            window.addEventListener('resize', resize);
+            resize();
+
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * width;
+                    this.y = Math.random() * height;
+                    this.vx = (Math.random() - 0.5) * 0.3;
+                    this.vy = (Math.random() - 0.5) * 0.3;
+                    this.size = Math.random() * 2 + 1;
+                    this.alpha = Math.random() * 0.5 + 0.1;
+                }
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    
+                    if (this.x < 0 || this.x > width) this.vx *= -1;
+                    if (this.y < 0 || this.y > height) this.vy *= -1;
+                }
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(37, 99, 235, ${this.alpha * 0.3})`; // Subtle blue
+                    ctx.fill();
+                }
+            }
+
+            for (let i = 0; i < 50; i++) {
+                particles.push(new Particle());
+            }
+
+            // Neural Network Lines
+            function drawLines() {
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+                        
+                        if (dist < 150) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.strokeStyle = `rgba(124, 58, 237, ${0.05 * (1 - dist/150)})`; // Subtle purple
+                            ctx.stroke();
+                        }
+                    }
+                }
+            }
+
+            function animateCanvas() {
+                ctx.clearRect(0, 0, width, height);
+                
+                particles.forEach(p => {
+                    p.update();
+                    p.draw();
+                });
+                drawLines();
+                
+                requestAnimationFrame(animateCanvas);
+            }
+            animateCanvas();
+        });
+
+        // Form Submission Mock Function
+        function submitForm() {
+            const btn = document.getElementById('submitBtn');
+            const originalText = btn.innerHTML;
+            
+            // Loading state
+            btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> 傳送中...';
+            btn.disabled = true;
+            btn.classList.add('opacity-80');
+            
+            // Mock API Call
+            setTimeout(() => {
+                btn.innerHTML = '<i class="fa-solid fa-check"></i> 已成功送出';
+                btn.classList.replace('bg-white', 'bg-accent');
+                btn.classList.replace('text-slate-900', 'text-white');
+                document.getElementById('contactForm').reset();
+                
+                // Reset after 3 seconds
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                    btn.classList.remove('opacity-80', 'bg-accent', 'text-white');
+                    btn.classList.add('bg-white', 'text-slate-900');
+                }, 3000);
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
